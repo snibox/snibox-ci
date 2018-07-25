@@ -1,0 +1,2 @@
+docker build -t snibox/snibox .
+docker push snibox/snibox

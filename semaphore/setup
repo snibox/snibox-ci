@@ -1,0 +1,8 @@
+nvm use 8.11.1
+bundle install --deployment --path vendor/bundle
+bundle exec rake db:setup
+bundle exec rake db:test:prepare
+bundle exec rake assets:precompile
+curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+chmod +x ./cc-test-reporter
+./cc-test-reporter before-build
