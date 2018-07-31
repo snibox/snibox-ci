@@ -1,4 +1,6 @@
 nvm use 8.11.1
+sudo touch /etc/apt/sources.list.d/google-chrome-source.list
+install-package --update-new google-chrome-stable
 bundle install --deployment --path vendor/bundle
 bundle exec rake db:setup
 bundle exec rake db:test:prepare
