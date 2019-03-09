@@ -1,4 +1,4 @@
-nvm use 8.11.1
+nvm use 10.15.0
 sudo touch /etc/apt/sources.list.d/google-chrome-source.list
 install-package --update-new google-chrome-stable
 bundle install --deployment --path vendor/bundle
